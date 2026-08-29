@@ -2,7 +2,7 @@ from fastapi import FastAPI, Request
 import re
 
 app = FastAPI()
-
+#app.route
 @app.post("/release-gate")
 async def release_gate(request: Request):
     payload = await request.json()
